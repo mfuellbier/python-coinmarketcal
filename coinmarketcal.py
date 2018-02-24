@@ -1,5 +1,5 @@
-import requests as r
 import json
+import requests as r
 
 
 def getCoins():
@@ -27,5 +27,4 @@ def getEvents(page=None, max=None, dateRangeStart=None, dateRangeEnd=None,
 
     url = "https://coinmarketcal.com/api/events"
     events = r.get(url, params=params)
-    #  return events
     return json.loads(events.text)
