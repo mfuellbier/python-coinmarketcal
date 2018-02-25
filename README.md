@@ -5,11 +5,11 @@ API: https://coinmarketcal.com/api/doc/
 
 ## Usage
 ```python
-import python-coinmarketcal
+import coinmarketcal
 # Get coins list
-python-coinmarketcal.getCoins()
+coinmarketcal.getCoins()
 # Get categories list
-python-coinmarketcal.getCategories()
+coinmarketcal.getCategories()
 # Get default events
-python-coinmarketcal.getEvents()
+coinmarketcal.getEvents()
 ```
