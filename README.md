@@ -1,7 +1,7 @@
 # python-coinmarketcal
 Coinmarketcal.com REST API python implementation
 
-API: https://coinmarketcal.com/api/doc/
+API (beta): https://coinmarketcal.com/api/doc/
 
 ## Usage
 ```python
