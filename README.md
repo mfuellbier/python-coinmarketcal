@@ -1,5 +1,5 @@
 # python-coinmarketcal
-Python wrapper for coinmarketcal.com
+Coinmarketcal.com REST API python implementation
 
 API: https://coinmarketcal.com/api/doc/
 
