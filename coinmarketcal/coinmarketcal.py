@@ -26,5 +26,9 @@ def getEvents(page=None, max=None, dateRangeStart=None, dateRangeEnd=None,
              }
 
     url = "https://coinmarketcal.com/api/events"
-    events = r.get(url, params=params)
-    return json.loads(events.text)
+    try:
+        events = r.get(url, params=params)
+        result = json.loads(events.text)
+    except json.decoder.JSONDecoderError:
+        result = []
+    return result
