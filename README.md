@@ -1,15 +1,17 @@
 # python-coinmarketcal
 Coinmarketcal.com REST API python implementation
 
-API (beta): https://coinmarketcal.com/api/doc/
+API (1.0.0): https://api.coinmarketcal.com/
 
 ## Usage
 ```python
 import coinmarketcal
+# Get Token
+coinmarketcal.getToken(Client ID, Client Secret)
 # Get coins list
-coinmarketcal.getCoins()
+coinmarketcal.getCoins(token)
 # Get categories list
-coinmarketcal.getCategories()
+coinmarketcal.getCategories(token)
 # Get default events
-coinmarketcal.getEvents()
+coinmarketcal.getEvents(token)
 ```
