@@ -17,7 +17,7 @@
 import logging
 import json
 import requests
-from datetime import datetime
+import datetime
 
 logger = logging.getLogger('python-coinmarketcal')
 
@@ -48,7 +48,7 @@ class Coinmarketcal:
             events =requests.post(url, data=payload)
             result = json.loads(events.text)
             result['expires_at'] = (
-                datetime.now()
+                datetime.datetime.now()
                 + datetime.timedelta(seconds=self._token['expires_in']))
         except json.decoder.JSONDecodeError:
             logger.debug("JSONDecodeError")
