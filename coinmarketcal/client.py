@@ -32,7 +32,7 @@ class Coinmarketcal:
     def token(self):
         if not getattr(self, '_token', None):
             self._token = self.get_token(self.id, self.secret)
-        if datetime.now() > self._token['expires_at']:
+        if datetime.datetime.now() > self._token['expires_at']:
             self._token = self.get_token(self.id, self.secret)
         return self._token['access_token']
 
