@@ -49,7 +49,7 @@ class Coinmarketcal:
             result = json.loads(events.text)
             result['expires_at'] = (
                 datetime.datetime.now()
-                + datetime.timedelta(seconds=self._token['expires_in']))
+                + datetime.timedelta(seconds=result['expires_in']))
         except json.decoder.JSONDecodeError:
             logger.debug("JSONDecodeError")
             result = []
