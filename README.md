@@ -3,15 +3,24 @@ Coinmarketcal.com REST API python implementation
 
 API (1.0.0): https://api.coinmarketcal.com/
 
+## Install
+```
+pip install https://github.com/trikota/python-coinmarketcal/archive/master.zip
+```
+
 ## Usage
 ```python
-import coinmarketcal
+from coinmarketcal import Coinmarketcal
 # Get Token
-coinmarketcal.getToken(Client ID, Client Secret)
+coinmarketcal = Coinmarketcal(client_id, client_secret)
+
 # Get coins list
-coinmarketcal.getCoins(token)
+coinmarketcal.get_coins()
 # Get categories list
-coinmarketcal.getCategories(token)
+coinmarketcal.get_categories()
 # Get default events
-coinmarketcal.getEvents(token)
+coinmarketcal.get_events(page=None, max=None,
+                         dateRangeStart=None, dateRangeEnd=None, coins=None,
+                         categories=None, sortBy=None, showOnly=None)
+
 ```
