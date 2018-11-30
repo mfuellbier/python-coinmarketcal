@@ -5,7 +5,7 @@ API (1.0.0): https://api.coinmarketcal.com/
 
 ## Install
 ```
-pip install https://github.com/trikota/python-coinmarketcal/archive/master.zip
+pip install https://github.com/mfuellbier/python-coinmarketcal/archive/master.zip
 ```
 
 ## Usage
